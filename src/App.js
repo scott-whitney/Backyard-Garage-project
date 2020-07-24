@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Homepage from './Pages/HomePage-component/homepage-component';
+import Articles from './Pages/Articles/Articles';
 import Header from './Component/header/header.component';
 import './App.css';
 
@@ -10,7 +10,7 @@ function App() {
       <Header/>
       <Switch>
 
-      <Route exact path ='/' component={Homepage}/>
+      <Route exact path ='/Articles' component={Articles}/>
       </Switch>
       
       

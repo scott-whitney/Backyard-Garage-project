@@ -9,7 +9,7 @@ const Header = () => (
     <Link className='option' to='/'>
     HOME
     </Link>
-    <Link className='option' to='/'>
+    <Link className='option' to='/Articles'>
     ARTICLES
     </Link>
     <Link className='option' to='/'>

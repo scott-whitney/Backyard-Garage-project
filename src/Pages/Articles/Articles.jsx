@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import { SearchBox } from './../../Component/search-box/search-box-component';
-import { previewImages } from './../../Component/Preview-Images/preview-images-component';
+import { SearchBox } from '../../Component/search-box/search-box-component';
+import { previewImages } from '../../Component/Preview-Images/preview-images-component';
 
 
-class Homepage extends Component {
+class Articles extends Component {
   constructor() {
     super();
     this.state = {
@@ -30,7 +30,7 @@ class Homepage extends Component {
      article.title.toLowerCase().includes(searchField.toLowerCase())
      )
    return (
-     <div className="HomePage">
+     <div className="Articles">
        <h1> Backyard Garage </h1>
              <SearchBox
        placeholder='search articles'
@@ -48,4 +48,4 @@ class Homepage extends Component {
 
 }
 
-export default Homepage;
+export default Articles;
