@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import { SearchBox } from './../search-box/search-box-component';
-import { previewImages } from './../Preview-Images/preview-images-component';
+import { SearchBox } from './../../Component/search-box/search-box-component';
+import { previewImages } from './../../Component/Preview-Images/preview-images-component';
 
 
 class Homepage extends Component {
