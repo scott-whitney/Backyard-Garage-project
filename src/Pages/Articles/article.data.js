@@ -3,6 +3,7 @@ const ARTICLE_DATA = [
       id: 1,
       title: 'Shop Space',
       date: '',
+      link: '/Articles/shop-space',
     },
     {
       id: 2,
