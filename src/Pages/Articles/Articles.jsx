@@ -15,10 +15,14 @@ class Articles extends Component {
       title: '',
     };
   }
+
+
+
   componentDidMount() {
 
   }
   handleChange = (e) => {
+    console.log('change detected')
     this.setState({
       searchField: e.target.value,
     });

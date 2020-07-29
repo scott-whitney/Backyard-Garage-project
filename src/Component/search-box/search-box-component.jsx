@@ -1,12 +1,13 @@
-import React from 'react';
-
-
+import React from "react";
+import { Search } from 'semantic-ui-react';
 
 export const SearchBox = ({ placeholder, handlechange }) => (
-  <input
-  className='search'
-  type='search' 
-  placeholder={placeholder} 
-  onChange={handlechange}
-  />
-)
+  <div className='search-box.container'>
+    <Search
+      className="search-box"
+      type="search"
+      placeholder={placeholder}
+      onSearchChange={handlechange}
+    />
+  </div>
+);
