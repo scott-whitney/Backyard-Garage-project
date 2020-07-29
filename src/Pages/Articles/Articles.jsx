@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { SearchBox } from '../../Component/search-box/search-box-component';
 import { CardList } from '../../Component/Articles/preview-article-list/preview-article-list.component';
 import ARTICLE_DATA from './article.data';
+import { Grid } from 'semantic-ui-react';
 
 // import the array of article data here
 
@@ -34,8 +35,10 @@ class Articles extends Component {
           handlechange={this.handleChange}
           />
           
-
+          <Grid container textAlign='center'  centered columns={3}>
           <CardList articles = {filteredArticles}/>
+          </Grid>
+          
 
 
         </div>
