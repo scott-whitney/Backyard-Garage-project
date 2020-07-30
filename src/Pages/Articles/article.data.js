@@ -40,8 +40,15 @@ const ARTICLE_DATA = [
     },
     {
       id: 7,
-      title: 'Crosley Wheels',
+      title: 'The Short 3 wheeling phase',
       date: '',
+      previewImage: require("./../../Assets/Images/Preview-Images/Preview-Image7.jpeg"),
+    },
+    {
+      id: 8,
+      title: 'Mini Chopper',
+      date: '',
+      previewImage: require("./../../Assets/Images/Preview-Images/Preview-Image8.jpeg"),
     }
 ];
 
