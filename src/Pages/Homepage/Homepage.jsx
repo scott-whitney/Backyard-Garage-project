@@ -17,7 +17,7 @@ const HomePage = () => (
         <Grid.Row>
           <Grid.Column width={5}>
             <Card>
-              <Image src={Hero1} />
+              <Image src={Hero3} />
             </Card>
           </Grid.Column>
           <Grid.Column width={5}>
@@ -43,7 +43,7 @@ const HomePage = () => (
 
         <Grid.Row>
           <Grid.Column width={5}>
-            <Card>
+            {/* <Card>
               <Image src={Hero4} />
             </Card>
           </Grid.Column>
@@ -55,7 +55,7 @@ const HomePage = () => (
           <Grid.Column width={5}>
             <Card>
               <Image src={Hero3} />
-            </Card>
+            </Card> */}
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -64,7 +64,7 @@ const HomePage = () => (
       <Grid centered>
         <Grid.Row>
           <Grid.Column width={5}>
-            
+        
 
 
           </Grid.Column>

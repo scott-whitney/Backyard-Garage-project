@@ -7,12 +7,12 @@ import './article-card.styles.scss';
 export const CardView = (props) => (
   <Grid.Column mobile={16} tablet={8} computer={4} className ='card-container'>
     <Link to={props.article.link}>
-      <Image alt='preview' src={props.article.previewImage}/>
+      <Image className='preview-image' alt='preview' src={props.article.previewImage}/>
     <Card>
       <Card.Header>{props.article.title}</Card.Header>
-      <Card.Meta>Date</Card.Meta>
+      <Card.Meta>{props.article.date}</Card.Meta>
       <Card.Description>
-        Article Description
+        {props.article.description}
       </Card.Description>
     </Card>
 

@@ -2,8 +2,9 @@ const ARTICLE_DATA = [
     {
       id: 1,
       title: 'Shop Space',
-      date: '',
+      date: 'Wednesday July 29, 2020',
       link: '/Articles/shop-space',
+      description: 'Figuring out how to build a shop in the backyard.',
       previewImage: require("./../../Assets/Images/Preview-Images/Preview-Image1.jpeg"),
     },
     {
@@ -11,6 +12,7 @@ const ARTICLE_DATA = [
       title: 'Spitty Spitty Bang Bang',
       date: '',
       link: '',
+      description: '',
       previewImage: require("./../../Assets/Images/Preview-Images/Preview-Image2.jpeg"),
     },
     {

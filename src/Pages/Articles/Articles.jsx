@@ -4,6 +4,8 @@ import { CardList } from '../../Component/Articles/preview-article-list/preview-
 import ARTICLE_DATA from './article.data';
 import { Grid } from 'semantic-ui-react';
 
+import './Articles.styles.scss';
+
 // import the array of article data here
 
 class Articles extends Component {
@@ -34,12 +36,12 @@ class Articles extends Component {
       article.title.toLowerCase().includes(searchField.toLowerCase()))
       return (
         <div className='Articles'>
-          <h1> Backyard Garage Articles</h1>
+          <h1 className='main-title'> Backyard Garage Articles</h1>
           <SearchBox placeholder='search articles'
           handlechange={this.handleChange}
           />
           
-          <Grid container textAlign='center'  centered columns={3}>
+          <Grid container textAlign='center'  centered columns={3} divided>
           <CardList articles = {filteredArticles}/>
           </Grid>
           
