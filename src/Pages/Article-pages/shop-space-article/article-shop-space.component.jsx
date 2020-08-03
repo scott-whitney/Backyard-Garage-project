@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Icon, Image, Grid, Table, Menu, Label } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import './article-shop-space.styles.scss';
 import { ArticleCreator } from './../../../Component/Article-Creator/Article-Creator/article-creator.component.jsx';
 import ARTICLE_DATA from '../../Articles/article.data';
