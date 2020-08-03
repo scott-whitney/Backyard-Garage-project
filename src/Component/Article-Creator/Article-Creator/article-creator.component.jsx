@@ -2,13 +2,24 @@ import React from 'react';
 import { Grid } from 'semantic-ui-react'
 import './article-creator.styles.scss'
 import { ArticleImageBrick } from './../article-image-brick/article-image-brick.component';
+import { ArticleTextBrick } from './../article-text-brick/article-text-brick.component';
 
 export const ArticleCreator = (props) => (
-  <Grid.Row className ='article-creation'>
+<Grid>
     {props.selectedArticle.bodyParagraphs.map(brick => (
 
+<Grid.Row>
+{ !brick.image ? null : <ArticleImageBrick key={brick.id} image={brick.image}/>}
+{ !brick.paragraph ? null : <ArticleTextBrick key={brick.id * 2} paragraph={brick.paragraph} /> }
+</Grid.Row>
 
-          <ArticleImageBrick key={brick.id} paragraph={brick.paragraph} image={brick.image}/>
+
+
+
+
+
+
+
 
 
 
@@ -19,5 +30,5 @@ export const ArticleCreator = (props) => (
 
     ))}
 
-  </Grid.Row>
+ </Grid>
 );

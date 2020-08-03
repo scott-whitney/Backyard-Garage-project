@@ -11,12 +11,12 @@ const ARTICLE_DATA = [
         {
           paragraph: "Probably the biggest problem facing anyone wanting to build a car will be, where? Space is at a premium? When you're a kid living with your parents this problem is even more persistent. Unless you can afford to rent out a shop or your parents have spare space in their garage you need to start looking else where. That elsewhere for me was the backyard. Now not everyone will have the same space available this is just to help you start thinking about how you can repurpose a space for yourself.",
           id: 1,
-          image: '',
+          image: require("./../../Assets/Images/Homepage-images/Home-page.image1.jpeg")
         },
         {
           paragraph: "Behind my parents house when they bought it was a half court set up on a roughy twenty five by twenty five foot slab of concrete with a basketball hoop. It was perfect for my intentions minus a few obvious obstacles.",
           id: 2,
-          image: '',
+          image: require("./../../Assets/Images/Shop-Space.images/Shop-space-image1.jpeg")
         },
         {
           paragraph: "The first of which was simply, it's outside! luckily the California weather allows me to ignore this to some point. It will never be so hot outside that I can't power through the sweat and never too cold that I couldn't bundle up and keep working. The only real issue was the elements such as rain interfering with my build. Nobody wants to watch their car rust while they're in the process of building it. ",
