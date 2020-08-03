@@ -1,12 +1,10 @@
 import React from 'react';
-import { Grid, Card, Image} from 'semantic-ui-react'
-
-import { Link } from 'react-router-dom';
+import { Grid, Card, Image, Button} from 'semantic-ui-react'
 import './article-card.styles.scss';
 
 export const CardView = (props) => (
   <Grid.Column mobile={16} tablet={8} computer={4} className ='card-container'>
-    <Link to={props.article.link}>
+    <Button onClick={ (event) => props.handleRedirect(props.article.link, props.article.position) }>
       <Image className='preview-image' alt='preview' src={props.article.previewImage}/>
     <Card>
       <Card.Header>{props.article.title}</Card.Header>
@@ -17,7 +15,7 @@ export const CardView = (props) => (
     </Card>
 
     
-    </Link>
+    </Button>
     
     
   </Grid.Column>

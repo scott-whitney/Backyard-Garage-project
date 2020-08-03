@@ -1,26 +1,28 @@
 import React from "react";
-import Hero3 from "./../../Assets/Images/Homepage-images/Home-page.image3.jpeg";
-import { Card, Image, Grid } from "semantic-ui-react";
-import "./Homepage.styles.scss";
 
-const HomePage = () => (
+import Hero4 from "./../../Assets/Images/Homepage-images/Home-page.image4.jpeg";
+
+import { Card,  Image, Grid } from "semantic-ui-react";
+import "./Contact.styles.scss";
+
+const ContactPage = () => (
   <div className="homepage">
     <div className="title">
-      <h2>Backyard Garage</h2>
+      <h2>Contact Me</h2>
     </div>
     <div className="hero-image">
       <Grid centered>
         <Grid.Row>
           <Grid.Column width={5}>
             <Card>
-              <Image src={Hero3} />
+              <Image src={Hero4} />
             </Card>
           </Grid.Column>
           <Grid.Column width={5}>
             <Card>
               <Card.Content>
                 <Card.Header>
-                  Before you begin
+                  
                 </Card.Header>
                 <Card.Meta>
                   Just so you know
@@ -71,4 +73,4 @@ const HomePage = () => (
   </div>
 );
 
-export default HomePage;
+export default ContactPage;

@@ -29,11 +29,19 @@ class Articles extends Component {
       searchField: e.target.value,
     });
   }
+  handleRedirect = (link, id) => {
+      this.props.history.push(link)
+      console.log(id)
+
+  }
+ 
 
   render() {
     const { articles, searchField } = this.state;
     const filteredArticles = articles.filter(article =>
       article.title.toLowerCase().includes(searchField.toLowerCase()))
+
+
       return (
         <div className='Articles'>
           <h1 className='main-title'> Backyard Garage Articles</h1>
@@ -42,7 +50,9 @@ class Articles extends Component {
           />
           
           <Grid container textAlign='center'  centered columns={3} divided>
-          <CardList articles = {filteredArticles}/>
+          <CardList articles = {filteredArticles}
+          handleRedirect = {this.handleRedirect}
+          />
           </Grid>
           
 

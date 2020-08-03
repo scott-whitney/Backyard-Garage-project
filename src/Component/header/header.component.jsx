@@ -6,15 +6,18 @@ import './header.styles.scss';
 const Header = () => (
 <div className='header-menu'>
   <div className='options'>
-    <Link className='option' to='/Home'>
+    <h2>
+      
+    </h2>
+    <Link className='option' to='/'>
     HOME
     </Link>
     <Link className='option' to='/Articles'>
     ARTICLES
     </Link>
-    <Link className='option' to='/'>
+    {/* <Link className='option' to='/Contact'>
     CONTACT
-    </Link>
+    </Link> */}
   </div>
 
 </div>
