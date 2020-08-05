@@ -45,7 +45,7 @@ class ShopSpace extends React.Component {
       <Grid>
         <Grid.Row>
           <Grid.Column>
-          <h2>
+          <h2 className='article-title'>
         {selectedArticle.title}
           </h2>
           </Grid.Column>

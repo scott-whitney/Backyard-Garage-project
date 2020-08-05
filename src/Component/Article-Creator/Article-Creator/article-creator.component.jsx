@@ -5,7 +5,7 @@ import { ArticleImageBrick } from './../article-image-brick/article-image-brick.
 import { ArticleTextBrick } from './../article-text-brick/article-text-brick.component';
 
 export const ArticleCreator = (props) => (
-<Grid container textAlign='center' centered divided>
+<Grid container textAlign='center' centered columns={2}>
     {props.selectedArticle.bodyParagraphs.map(brick => (
 
 <Grid.Row key={brick.id}>
